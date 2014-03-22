@@ -7,10 +7,11 @@ public class Letter : MonoBehaviour {
   
   //disabled when dropped by player
   public bool disabled = false;
-  public float disabledTime = 2.0f;
   private float timer = 0.0f;
-  public float travelDistance = 2.0f;
-  public Vector3 originalLocation;
+  private Vector3 originalLocation;
+  
+  private float disabledTime = 2.0f;
+  private const float travelDistance = 2.0f;
   private const float blinkSpeed = 0.15f;
   
   void Update() {
